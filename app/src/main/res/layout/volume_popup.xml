@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/volume_popup_id"
+    android:background="#ffffff">
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/seekBar"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp">
+
+        <Button android:id="@+id/close_volume"
+            android:layout_width="80dp"
+            android:layout_height="36dp"
+            android:layout_marginRight="8dp"
+            android:background="#ffffff"
+            android:textColor="#212121"
+
+            android:layout_toLeftOf="@+id/send_volume"
+            android:text="취소하기"/>
+
+        <Button android:id="@+id/send_volume"
+            android:layout_width="64dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="8dp"
+            android:background="#ffffff"
+            android:textColor="#212121"
+
+            android:text="완료"/>
+
+    </RelativeLayout>
+</LinearLayout>

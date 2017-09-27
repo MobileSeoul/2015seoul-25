@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+
+    <!-- title -->
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:background="#5c8aea"
+        android:layout_height="56dp">
+        <TextView android:text="안심귀가 신청"
+            android:id="@+id/title_tv"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+        <!--<Button-->
+            <!--android:id="@+id/btn_siren"-->
+            <!--android:layout_width="23dp"-->
+            <!--android:layout_height="23dp"-->
+            <!--android:background="@drawable/new_button"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginEnd="10dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--/>-->
+
+    <!-- category -->
+    <RelativeLayout
+        android:id="@+id/ll_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/title_layout"
+        android:background="#5c8aea"
+        >
+    <!-- Quick Button -->
+    <Button
+        android:id="@+id/quick_request_btn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/quick_request_active"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        />
+    <!-- Find Gu Button -->
+    <Button
+        android:id="@+id/find_gu_btn"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:background="@drawable/find_gu_in_active"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        />
+    <!-- Setting Button -->
+    <Button
+        android:id="@+id/setting_btn"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:background="@drawable/setting_in_active"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="8dp"
+        />
+    </RelativeLayout>
+    <!-- content -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_title_layout"
+        >
+    </android.support.v4.view.ViewPager>
+
+
+    <ImageButton
+    android:id="@+id/btn_siren"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="18dp"
+    android:layout_marginEnd="16dp"
+        />
+
+    </RelativeLayout>

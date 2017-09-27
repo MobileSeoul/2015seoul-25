@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- title -->
+    <RelativeLayout
+        android:id="@+id/set_local_title_layout"
+        android:layout_width="fill_parent"
+        android:background="#5c8aea"
+        android:layout_height="56dp">
+        <TextView android:text="나의 목적지"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <!-- content -->
+    <EditText android:id="@+id/name"
+        android:text="집"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText android:id="@+id/station"
+        android:layout_width="fill_parent"
+        android:text="건대입구역"
+        android:layout_height="wrap_content"></EditText>
+    <EditText android:id="@+id/gu"
+        android:text="광진구"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText android:id="@+id/number"
+        android:text="01051070178"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></EditText>
+    <Button android:id="@+id/db_local"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="DB에 저장"></Button>
+</LinearLayout>

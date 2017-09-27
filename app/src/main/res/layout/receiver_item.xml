@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+
+>
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_width="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="50dp"
+        android:background="@drawable/setcall"/>
+    <LinearLayout
+        android:layout_toRightOf="@+id/imageview"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/receiver_item_name"
+            android:textSize="23dp"
+            android:text="New Name"
+
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/receiver_item_number"
+            android:textSize="15dp"
+            android:text="New Number"
+            android:textColor="#6b6b6b"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/receiver_delete_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/delete"
+        />
+</RelativeLayout>
